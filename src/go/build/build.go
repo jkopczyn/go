@@ -731,7 +731,6 @@ func (ctxt *Context) Import(path string, srcDir string, mode ImportMode) (*Packa
 		format = "\t%s (from $GOPATH)"
 		for _, dir := range tried.gopath {
 			paths = append(paths, fmt.Sprintf(format, dir))
-			format = "\t%s"
 		}
 		if len(tried.gopath) == 0 {
 			paths = append(paths, "\t($GOPATH not set. For more details see: 'go help gopath')")
