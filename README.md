@@ -1,0 +1,1 @@
+The Go programming language has a number of questionable design choices, like the ever-present `if err != nil { return err }`, and some under-used features like named return values. This is a dialect principally created to explore what Go would look like with those fixed.
